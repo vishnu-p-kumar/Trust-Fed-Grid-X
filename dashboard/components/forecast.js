@@ -1,0 +1,40 @@
+(function () {
+  function renderForecastSummary(prefix, forecast) {
+    const targets = {
+      hour: document.getElementById(`${prefix}ForecastHour`),
+      day: document.getElementById(`${prefix}ForecastDay`),
+      week: document.getElementById(`${prefix}ForecastWeek`),
+    };
+    if (targets.hour) {
+      targets.hour.textContent = SmartGridDashboard.formatKwh(forecast.ensemble?.next_hour || forecast.next_hour || 0, 2);
+    }
+    if (targets.day) {
+      targets.day.textContent = SmartGridDashboard.formatKwh(forecast.ensemble?.next_day || forecast.next_day || 0, 2);
+    }
+    if (targets.week) {
+      targets.week.textContent = SmartGridDashboard.formatKwh(forecast.ensemble?.next_week || forecast.next_week || 0, 2);
+    }
+  }
+
+  function renderForecastComparison(containerId, forecast) {
+    const lstmSeries = forecast.comparison_series?.lstm || forecast.lstm?.series || [];
+    const transformerSeries = forecast.comparison_series?.transformer || forecast.transformer?.series || [];
+    SmartGridCharts.renderPlotly(
+      containerId,
+      [
+        { x: lstmSeries.map((item) => item.step), y: lstmSeries.map((item) => item.forecast_kwh), type: "scatter", mode: "lines", name: "LSTM", line: { color: "#14b8a6", width: 3 } },
+        { x: transformerSeries.map((item) => item.step), y: transformerSeries.map((item) => item.forecast_kwh), type: "scatter", mode: "lines", name: "Transformer", line: { color: "#f97316", width: 3, dash: "dash" } },
+      ],
+      {
+        xaxis: { title: "Forecast Step", gridcolor: "rgba(147, 164, 187, 0.12)" },
+        yaxis: { title: "Forecast kWh", gridcolor: "rgba(147, 164, 187, 0.12)" },
+        legend: { orientation: "h" },
+      }
+    );
+  }
+
+  window.SmartGridForecast = {
+    renderForecastComparison,
+    renderForecastSummary,
+  };
+})();

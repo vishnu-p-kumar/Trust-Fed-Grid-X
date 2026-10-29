@@ -1621,4 +1621,5 @@ python -m pytest -q
 
 The validation command checks structure and declared provenance; it cannot independently prove labels are true. The theft evaluation splits by customer and reports class-sensitive metrics. The forecasting benchmark uses chronological holdout data and compares simple baselines.
 #   T r u s t - F e d - G r i d - X  
+ #   T r u s t - F e d - G r i d - X  
  
