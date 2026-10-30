@@ -11,3 +11,25 @@ C:\Users\vishnu\Desktop\GridSentinel-Updated-Working-Project\GridSentinel-AI-Pow
   tiles = tiles.build_url(fill_subdomain=False, scale_factor="{r}")  # type: ignore
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+C:\Users\vishnu\Desktop\GridSentinel-Updated-Working-Project\GridSentinel-AI-Powered-Electricity-Theft-Grid-Intelligence-System\.venv\Lib\site-packages\folium\raster_layers.py:130: UserWarning: CartoDB tiles now require an API key. Please provide one to continue using the tiles. You can request the key at https://carto.com/basemaps/apikey/.
+  tiles = tiles.build_url(fill_subdomain=False, scale_factor="{r}")  # type: ignore
+INFO:     127.0.0.1:54216 - "WebSocket /ws/live" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:56302 - "WebSocket /ws/live" [accepted]
+INFO:     connection open
+C:\Users\vishnu\Desktop\GridSentinel-Updated-Working-Project\GridSentinel-AI-Powered-Electricity-Theft-Grid-Intelligence-System\.venv\Lib\site-packages\folium\raster_layers.py:130: UserWarning: CartoDB tiles now require an API key. Please provide one to continue using the tiles. You can request the key at https://carto.com/basemaps/apikey/.
+  tiles = tiles.build_url(fill_subdomain=False, scale_factor="{r}")  # type: ignore
+INFO:     127.0.0.1:54450 - "WebSocket /ws/live" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58501 - "WebSocket /ws/live" [accepted]
+INFO:     connection open
+C:\Users\vishnu\Desktop\GridSentinel-Updated-Working-Project\GridSentinel-AI-Powered-Electricity-Theft-Grid-Intelligence-System\.venv\Lib\site-packages\folium\raster_layers.py:130: UserWarning: CartoDB tiles now require an API key. Please provide one to continue using the tiles. You can request the key at https://carto.com/basemaps/apikey/.
+  tiles = tiles.build_url(fill_subdomain=False, scale_factor="{r}")  # type: ignore
+C:\Users\vishnu\Desktop\GridSentinel-Updated-Working-Project\GridSentinel-AI-Powered-Electricity-Theft-Grid-Intelligence-System\.venv\Lib\site-packages\folium\raster_layers.py:130: UserWarning: CartoDB tiles now require an API key. Please provide one to continue using the tiles. You can request the key at https://carto.com/basemaps/apikey/.
+  tiles = tiles.build_url(fill_subdomain=False, scale_factor="{r}")  # type: ignore
+C:\Users\vishnu\Desktop\GridSentinel-Updated-Working-Project\GridSentinel-AI-Powered-Electricity-Theft-Grid-Intelligence-System\.venv\Lib\site-packages\folium\raster_layers.py:130: UserWarning: CartoDB tiles now require an API key. Please provide one to continue using the tiles. You can request the key at https://carto.com/basemaps/apikey/.
+  tiles = tiles.build_url(fill_subdomain=False, scale_factor="{r}")  # type: ignore
+C:\Users\vishnu\Desktop\GridSentinel-Updated-Working-Project\GridSentinel-AI-Powered-Electricity-Theft-Grid-Intelligence-System\.venv\Lib\site-packages\folium\raster_layers.py:130: UserWarning: CartoDB tiles now require an API key. Please provide one to continue using the tiles. You can request the key at https://carto.com/basemaps/apikey/.
+  tiles = tiles.build_url(fill_subdomain=False, scale_factor="{r}")  # type: ignore
+INFO:     127.0.0.1:62581 - "WebSocket /ws/live" [accepted]
+INFO:     connection open
